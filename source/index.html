@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>MooN</title>
+  <link rel="stylesheet" href="css/vendor/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/opensans-light.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans-semibold.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans-bold.woff2" as="font" crossorigin>
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу b.</h1>
+  <h1 class="visually-hidden">Moon - магазин велосипедов</h1>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <nav class="header__nav navigation">
+        <div class="navigation__toggle" tabindex="0" aria-label="Открыть главное меню">
+          <div class="navigation__icon"></div>
+        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="">О нас</a></li>
+          <li class="navigation__item"><a href="">Виды велосипедов</a></li>
+          <li class="navigation__item"><a href="">Видео про велосипеды</a></li>
+          <li class="navigation__item"><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </body>
+
 </html>
