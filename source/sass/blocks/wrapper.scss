@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  // @include tablet {
+  //   padding-left: $tablet-padding;
+  //   padding-right: $tablet-padding;
+  // }
+
+  // @include mobile {
+  //   padding-left: $mobile-padding;
+  //   padding-right: $mobile-padding;
+  // }
+}
