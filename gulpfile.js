@@ -29,6 +29,16 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("normalize", function () {
+  return gulp.src("source/vendor/*.css")
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(csso())
+  .pipe(rename("normalize.min.css"))
+  .pipe(gulp.dest("build/css/vendor"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -97,5 +107,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "normalize", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
