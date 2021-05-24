@@ -1,0 +1,8 @@
+.page {
+  @include font-options($family, $default-font-size, $default-line-height, $normal-font-weight, $black);
+  height: 100%;
+}
+
+.page h2 {
+  @include font-options($family, $title-font-size, $title-line-height, $semibold-font-weight, $black);
+}
