@@ -1,0 +1,83 @@
+.header {
+  position: fixed;
+  width: 100%;
+
+  &--scroll {
+    background-color: $dark-grey;
+  }
+
+  @include tablet {
+    position: relative;
+  }
+}
+
+.header__wrapper {
+  padding: 0;
+  max-width: 100%;
+}
+
+.header__toggle--no-js {
+  display: none;
+}
+
+.header__toggle {
+  @include tablet {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &--open {
+    background-color: inherit;
+  }
+}
+
+.header__icon,
+.header__icon::before,
+.header__icon::after {
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22.5px;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+.header__icon::before,
+.header__icon::after {
+  content: "";
+  transition: 0.3s;
+}
+
+.header__icon::before {
+  transform: translate(-50%, -7px);
+}
+
+.header__icon::after {
+  transform: translate(-50%, 5px);
+}
+
+.header__icon--open {
+  height: 0;
+}
+
+.header__icon--open::after,
+.header__icon--open::before {
+  width: 30.74px;
+  background-color: $cross-grey;
+}
+
+.header__icon--open::after {
+  transform: translate(-45%, 0) rotate(-45deg);
+}
+
+.header__icon--open::before {
+  transform: translate(-40%, 0) rotate(45deg);
+}
