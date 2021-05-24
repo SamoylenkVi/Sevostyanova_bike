@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,29 +8,99 @@
   <title>MooN</title>
   <link rel="stylesheet" href="css/vendor/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="/fonts/opensans-light.woff2" as="font" crossorigin>
-  <link rel="preload" href="/fonts/opensans-regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="/fonts/opensans-semibold.woff2" as="font" crossorigin>
-  <link rel="preload" href="/fonts/opensans-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/opensans-light.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/opensans-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/opensans-semibold.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/opensans-bold.woff2" as="font" crossorigin>
 </head>
 
 <body>
   <h1 class="visually-hidden">Moon - магазин велосипедов</h1>
   <header class="header">
     <div class="header__wrapper wrapper">
+      <div class="header__toggle header__toggle--no-js" tabindex="0" aria-label="Открыть главное меню">
+        <span class="header__icon"></span>
+      </div>
       <nav class="header__nav navigation">
-        <div class="navigation__toggle" tabindex="0" aria-label="Открыть главное меню">
-          <div class="navigation__icon"></div>
-        </div>
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="">О нас</a></li>
-          <li class="navigation__item"><a href="">Виды велосипедов</a></li>
-          <li class="navigation__item"><a href="">Видео про велосипеды</a></li>
-          <li class="navigation__item"><a href="">Контакты</a></li>
+        <ul>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Виды велосипедов</a></li>
+          <li><a href="">Видео про велосипеды</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <main>
+    <section class="promo">
+      <div class="promo__wrapper wrapper">
+        <div class="promo__banner">
+          <a href="javascript:void(0);">
+            <svg width="68" height="21" viewBox="0 0 68 21">
+              <use xlink:href="img/sprite_auto.svg#logo-icon"></use>
+            </svg>
+          </a>
+          <h2>Мы продаем велосипеды</h2>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <div class="promo__form">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <input type="text" name="username" placeholder="Введите Ваше Имя" aria-label="Введите ваше имя">
+          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" aria-label="Введите ваш номер телефона" pattern="8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="17" maxlength="17">
+          <button class="promo__button" type="submit">Подобрать велосипед мечты</button>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper wrapper">
+        <h2>Несколько фактов о нас</h2>
+        <ul>
+          <li>
+            <span>01</span>
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li>
+            <span>02</span>
+            <p>Доставка велосипедов по всей России!</p>
+          </li>
+          <li>
+            <span>03</span>
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li>
+            <span>04</span>
+            <p>Профессиональные консультации!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="assortment">
+      <div class="assortment__wrapper wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul>
+        <li>
+          <figure>
+            <picture></picture>
+            <figcaption>Дорожный велосипед</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture></picture>
+            <figcaption>Горный велосипед</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture></picture>
+            <figcaption>Детский велосипед</figcaption>
+          </figure>
+        </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
