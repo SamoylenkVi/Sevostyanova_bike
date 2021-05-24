@@ -4,6 +4,11 @@ $white: #ffffff;
 $blue: #0ad9c6;
 $text-grey: #1f1f1f;
 $black: #000000;
+$border-white: rgba(255, 255, 255, 0.2);
+$cross-grey: rgba(20, 21, 23, 0.2);
+$grey: #f6f6f6;
+$dark-grey: #48494d;
+$light-grey: #1c1c1c;
 
 // Viewports
 $desktop-width: 1024px;
@@ -11,8 +16,36 @@ $tablet-width: 768px;
 $mobile-width: 320px;
 
 //Font
-$family-montserrat: "Open Sans", "Arial", sans-serif;
+$family: "Open Sans", "Arial", sans-serif;
 $light-font-weight: 300;
 $normal-font-weight: 400;
 $semibold-font-weight: 600;
 $bold-font-weight: 700;
+$title-font-size: 30px;
+$title-line-height: 30px;
+$default-font-size: 22px;
+$default-line-height: 34px;
+$special-font-size: 15px;
+$small-font-size: 16px;
+$middle-font-size: 17px;
+$mobile-font-size: 18px;
+$promo-font-size: 20px;
+$mob-title-font-size: 24px;
+$features-font-size: 28px;
+$extra-font-size: 46px;
+$special-line-height: 21px;
+$mail-line-height: 22px;
+$small-line-height: 24px;
+$middle-line-height: 28px;
+$addres-line-height: 31px;
+$base-line-height: 32px;
+$mob-line-height: 34px;
+$features-line-height: 38px;
+$advantages-line-height: 41px;
+$promo-line-height: 42px;
+$extra-line-height: 64px;
+$base-letter-spacing: -0.005em;
+$title-letter-spacing: 0.002em;
+
+//Padding
+$tablet-padding: 15px;
