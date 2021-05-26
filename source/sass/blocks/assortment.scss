@@ -3,13 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 1038px;
+  min-height: 1041px;
   max-width: 1320px;
-  padding: 20px 10px 26px;
+  padding: 20px 10px 30px;
 
   @include tablet {
     min-height: 100%;
     padding-top: 50px;
+    padding-bottom: 92px;
+  }
+
+  @include mobile {
+    padding-bottom: 77px;
   }
 }
 
@@ -21,6 +26,10 @@
     font-size: $small-line-height;
     line-height: $advantages-line-height;
     padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding: 0;
   }
 }
 
