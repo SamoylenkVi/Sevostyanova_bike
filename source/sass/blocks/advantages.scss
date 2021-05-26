@@ -10,10 +10,11 @@
     min-height: 100%;
     justify-content: flex-start;
     padding-top: 48px;
+    padding-bottom: 60px;
   }
 
   @include mobile {
-    padding: 12px 0 20px;
+    padding: 12px 0 64px;
   }
 }
 
@@ -55,11 +56,6 @@
   align-items: center;
   max-width: 263px;
   min-height: 130px;
-
-  @include tablet {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 .advantages span {
@@ -82,6 +78,6 @@
   @include mobile {
     font-size: $mobile-font-size;
     line-height: $mob-line-height;
-    padding: 3px 21px;
+    padding: 3px 0;
   }
 }
