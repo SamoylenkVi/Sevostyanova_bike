@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 1041px;
   max-width: 1320px;
-  padding: 20px 10px 30px;
+  padding: 20px 10px 24px;
 
   @include tablet {
     min-height: 100%;
@@ -50,12 +50,14 @@
 
   @include mobile {
     row-gap: 95px;
+    padding: 32px 0;
   }
 }
 
 .assortment figcaption {
   text-align: center;
   padding-top: 10px;
+  letter-spacing: 0.025em;
 }
 
 .assortment__picture {

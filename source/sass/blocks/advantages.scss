@@ -63,7 +63,7 @@
   line-height: $features-line-height;
   font-weight: $bold-font-weight;
   color: $blue;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
   @include mobile {
     padding-bottom: 5px;
@@ -73,7 +73,7 @@
 .advantages p {
   text-align: center;
   margin: 0;
-  letter-spacing: -0.006em;
+  letter-spacing: $title-letter-spacing;
 
   @include mobile {
     font-size: $mobile-font-size;

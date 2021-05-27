@@ -3,26 +3,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $video-grey;
-  padding: 70px 25px;
+  background: linear-gradient($video-grey 87.7%, $white 7%);
+  padding: 70px 25px 50px;
+  min-height: 706px;
 
   @include tablet {
-    padding: 15px 25px;
+    min-height: 413px;
+    padding: 15px 25px 37px;
+    background: linear-gradient(#131314 82.7%, $white 18%);
   }
 
   @include mobile {
     padding: 83px 0;
+    background: linear-gradient(#131314 79.7%, $white 21%);
   }
 }
 
 .video-bike__wrapper h2 {
   color: $white;
   margin: 0;
-  padding: 51px 20px 19px;
+  padding: 52px 20px 19px;
 
   @include tablet {
     font-size: $mob-title-font-size;
     line-height: $addres-line-height;
+    padding-top: 54px;
   }
 
   @include mobile {
@@ -35,17 +40,18 @@
   font-size: $small-font-size;
   line-height: $middle-line-height;
   margin: 0;
-  max-width: 429px;
+  max-width: 416px;
   text-align: center;
+  padding-bottom: 10px;
 
   @include tablet {
-    max-width: 490px;
+    max-width: 474px;
     letter-spacing: -0.005em;
     padding: 3px 1px;
   }
 
   @include mobile {
-    padding: 20px 0;
+    padding: 20px 7px;
   }
 }
 
@@ -54,16 +60,19 @@
   width: 100%;
   height: auto;
   max-width: 929px;
-  padding-bottom: 51.13%;
-  transform: translateY(58px);
+  padding-bottom: 45.13%;
+  transform: translateY(46px);
 
   @include tablet {
-    transform: translateY(0);
+    padding-bottom: 39.13%;
     max-width: 503px;
+    transform: translateY(35px);
   }
 
   @include mobile {
-    width: call(100% -32px);
+    width: calc(100% - 30px);
+    transform: translateY(32px);
+    padding-bottom: 50.13%;
   }
 }
 
