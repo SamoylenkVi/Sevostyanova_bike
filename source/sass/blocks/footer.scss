@@ -1,0 +1,54 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 158px;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 90px;
+  max-width: 957px;
+  padding-right: 38px;
+  padding-top: 33px;
+
+  @include tablet {
+    min-height: 98px;
+    padding-top: 16px;
+    padding-right: 27px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+    padding-right: 11px;
+    row-gap: 12px;
+  }
+}
+
+.footer__wrapper a {
+  @include link-default-remove($link-black);
+  font-size: $small-font-size;
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.footer__wrapper svg {
+  margin-right: 15px;
+}
+
+.footer__mail a {
+  line-height: $mail-line-height;
+}
+
+.footer__phone a {
+  line-height: $base-line-height;
+
+  @include mobile {
+    padding-right: 18px;
+  }
+}
