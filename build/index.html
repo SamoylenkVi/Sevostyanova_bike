@@ -8,10 +8,10 @@
   <title>MooN</title>
   <link rel="stylesheet" href="css/vendor/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="prefetch" href="./fonts/opensans-light.woff2" as="font" crossorigin="" type="font/woff2">
-  <link rel="prefetch" href="./fonts/opensans-regular.woff2" as="font" crossorigin="" type="font/woff2">
-  <link rel="prefetch" href="./fonts/opensans-semibold.woff2" as="font" crossorigin="" type="font/woff2">
-  <link rel="prefetch" href="./fonts/opensans-bold.woff2" as="font" crossorigin="" type="font/woff2">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -23,10 +23,10 @@
       </div>
       <nav class="header__nav navigation">
         <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Виды велосипедов</a></li>
-          <li><a href="">Видео про велосипеды</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#advantages">О нас</a></li>
+          <li><a href="#assortment">Виды велосипедов</a></li>
+          <li><a href="#video-bike">Видео про велосипеды</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -52,7 +52,7 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper wrapper">
+      <div class="advantages__wrapper wrapper" id="advantages">
         <h2>Несколько фактов о нас</h2>
         <ul>
           <li>
@@ -75,7 +75,7 @@
       </div>
     </section>
     <section class="assortment">
-      <div class="assortment__wrapper wrapper">
+      <div class="assortment__wrapper wrapper" id="assortment">
         <h2>Виды велосипедов</h2>
         <ul>
           <li>
@@ -109,7 +109,7 @@
       </div>
     </section>
     <section class="video-bike">
-      <div class="video-bike__wrapper wrapper">
+      <div class="video-bike__wrapper wrapper" id="video-bike">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video-bike__container">
@@ -131,6 +131,24 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper" id="contacts">
+      <div class="footer__mail">
+        <a href="mailto:puteshestviemechta@gmail.ru">
+          <svg width="26" height="20">
+            <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+          </svg>
+          puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="footer__phone">
+        <a href="tel:+749978468446">
+          <svg width="22" height="24" fill="none">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+          </svg>
+          +7 (499) -784-684-46</a>
+      </div>
+    </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 

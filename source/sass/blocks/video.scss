@@ -43,6 +43,7 @@
   max-width: 416px;
   text-align: center;
   padding-bottom: 10px;
+  letter-spacing: $base-letter-spacing;
 
   @include tablet {
     max-width: 474px;

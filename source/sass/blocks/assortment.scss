@@ -9,12 +9,13 @@
 
   @include tablet {
     min-height: 100%;
-    padding-top: 50px;
+    padding-top: 53px;
     padding-bottom: 92px;
   }
 
   @include mobile {
-    padding-bottom: 77px;
+    padding-bottom: 75px;
+    padding-top: 51px;
   }
 }
 

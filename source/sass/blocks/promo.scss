@@ -23,8 +23,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 20px;
+  padding: 90px 17px 20px;
   justify-content: space-between;
   max-width: 914px;
 
@@ -74,14 +73,14 @@
   margin: 0;
   font-size: $extra-font-size;
   line-height: $extra-line-height;
-  letter-spacing: 0.025em;
-  margin-bottom: 26px;
+  letter-spacing: $special-letter-spacing;
+  margin-bottom: 24px;
 
   @include tablet {
     align-self: center;
     font-size: $title-font-size;
     line-height: $promo-line-height;
-    margin: 38px 0 20px;
+    margin: 41px 0 20px;
   }
 
   @include mobile {
@@ -97,7 +96,7 @@
   font-size: $promo-font-size;
   line-height: $base-line-height;
   font-weight: $light-font-weight;
-  letter-spacing: $base-letter-spacing;
+  letter-spacing: -0.008em;
 
   @include tablet {
     align-self: center;
@@ -115,7 +114,7 @@
 
 .promo__banner a {
   margin-bottom: 22px;
-  margin-top: 7px;
+  margin-top: 3px;
 
   @include tablet {
     padding: 17px 22px;
@@ -144,10 +143,10 @@
   font-size: $middle-font-size;
   line-height: $middle-line-height;
   font-weight: $semibold-font-weight;
-  letter-spacing: $base-letter-spacing;
+  letter-spacing: $title-letter-spacing;
   text-align: center;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 11px;
 
   @include tablet {
     color: $black;
@@ -167,8 +166,10 @@
   width: 327px;
   border-radius: 6px;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 20px;
   padding: 10px 30px;
+  font-size: $special-font-size;
+  line-height: $small-line-height;
 
   &::placeholder {
     font-size: $special-font-size;
@@ -198,8 +199,8 @@
   outline: none;
   border: none;
   border-radius: 6px;
-  margin-top: 25px;
-  margin-bottom: 4px;
+  margin-top: 20px;
+  letter-spacing: normal;
 
   &:active {
     color: $border-white;

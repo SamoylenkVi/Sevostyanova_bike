@@ -6,6 +6,7 @@ $text-grey: #1f1f1f;
 $black: #000000;
 $border-white: rgba(255, 255, 255, 0.2);
 $cross-grey: rgba(20, 21, 23, 0.2);
+$link-black: rgba(0, 0, 0, 0.5);
 $grey: #f6f6f6;
 $dark-grey: #48494d;
 $light-grey: #1c1c1c;
@@ -45,8 +46,9 @@ $features-line-height: 38px;
 $advantages-line-height: 41px;
 $promo-line-height: 42px;
 $extra-line-height: 64px;
-$base-letter-spacing: -0.005em;
-$title-letter-spacing: 0.002em;
+$title-letter-spacing: -0.005em;
+$base-letter-spacing: -0.025em;
+$special-letter-spacing: 0.02em;
 
 //Padding
 $tablet-padding: 15px;

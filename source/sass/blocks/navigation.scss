@@ -45,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 62px;
-  padding: 19px 20px 0;
+  padding: 17px 20px 0;
   border-bottom: 1px solid $border-white;
 
   @include tablet {
@@ -58,7 +58,7 @@
 }
 
 .navigation li {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 
   @include tablet {
     display: flex;
@@ -76,7 +76,7 @@
   font-size: $small-font-size;
   line-height: $base-line-height;
   font-weight: $light-font-weight;
-  letter-spacing: $base-letter-spacing;
+  letter-spacing: $title-letter-spacing;
   opacity: 0.7;
 
   @include tablet {

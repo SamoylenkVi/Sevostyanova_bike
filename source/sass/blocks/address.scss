@@ -13,13 +13,13 @@
 
   @include mobile {
     justify-content: flex-start;
-    padding-top: 21px;
+    padding-top: 23px;
   }
 }
 
 .address__wrapper h2 {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @include tablet {
     font-size: $mob-title-font-size;
@@ -37,7 +37,6 @@
   line-height: $addres-line-height;
   margin: 0;
   max-width: 555px;
-  letter-spacing: 0.02em;
   text-align: center;
   padding-bottom: 42px;
 
