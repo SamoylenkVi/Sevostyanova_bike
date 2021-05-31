@@ -38,6 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 38px;
+  counter-reset: counter;
 
   @include tablet {
     grid-template-columns: 1fr 1fr;
@@ -65,6 +66,11 @@
   font-weight: $bold-font-weight;
   color: $blue;
   padding-bottom: 15px;
+
+  &::before {
+    counter-increment: counter;
+    content: "0" counter(counter) "";
+  }
 
   @include tablet {
     padding: 2px 0 17px 2px;

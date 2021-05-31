@@ -189,6 +189,10 @@
   }
 }
 
+.invalid {
+  border-color: $invalid;
+}
+
 .promo__button {
   min-height: 51px;
   min-width: 327px;

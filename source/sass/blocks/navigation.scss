@@ -24,6 +24,7 @@
 
 .navigation--open {
   @include tablet {
+    overflow-y: auto;
     position: fixed;
     transform: translateX(0%);
     transition-duration: 100ms;
