@@ -179,6 +179,11 @@
     font-weight: $normal-font-weight;
   }
 
+  &:hover,
+  &:focus {
+    border-color: $back-grey;
+  }
+
   @include tablet {
     margin-top: 17px;
     padding: 6px 23px 12px;
@@ -205,6 +210,12 @@
   border-radius: 6px;
   margin-top: 20px;
   letter-spacing: normal;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
+  }
 
   &:active {
     color: $border-white;

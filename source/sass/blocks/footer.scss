@@ -31,6 +31,17 @@
   display: flex;
   align-items: center;
   min-height: 35px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $hover-blue;
+  }
+
+  &:active {
+    color: $border-white;
+    fill: $border-white;
+  }
 
   @include mobile {
     justify-content: center;
@@ -39,6 +50,7 @@
 
 .footer__wrapper svg {
   margin-right: 15px;
+  color: $blue;
 }
 
 .footer__mail a {

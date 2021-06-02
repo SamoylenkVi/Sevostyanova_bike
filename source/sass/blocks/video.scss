@@ -102,6 +102,20 @@
   height: 65px;
   background-color: $blue;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-grey;
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    opacity: 0.2;
+    outline: none;
+    border: none;
+  }
 
   &::before {
     position: absolute;
