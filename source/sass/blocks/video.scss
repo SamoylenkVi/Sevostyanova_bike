@@ -1,21 +1,30 @@
+.video-bike {
+  background: linear-gradient($video-grey 87.7%, $white 7%);
+
+  @include tablet {
+    background: linear-gradient(#131314 82.7%, $white 18%);
+  }
+
+  @include mobile {
+    background: linear-gradient(#131314 79.7%, $white 21%);
+  }
+}
+
 .video-bike__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient($video-grey 87.7%, $white 7%);
   padding: 70px 25px 50px;
   min-height: 706px;
 
   @include tablet {
     min-height: 413px;
     padding: 15px 25px 37px;
-    background: linear-gradient(#131314 82.7%, $white 18%);
   }
 
   @include mobile {
     padding: 83px 0;
-    background: linear-gradient(#131314 79.7%, $white 21%);
   }
 }
 

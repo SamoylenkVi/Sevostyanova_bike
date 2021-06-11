@@ -1,6 +1,8 @@
 .page {
   @include font-options($family, $default-font-size, $default-line-height, $normal-font-weight, $black);
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page h2 {

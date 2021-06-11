@@ -92,6 +92,7 @@
 .assortment__picture--road {
   transform: translateY(13px);
   border-radius: 10px;
+  width: 342px;
 
   &::before {
     position: absolute;
@@ -108,6 +109,7 @@
 
   @include tablet {
     transform: translateY(0);
+    width: 270px;
 
     &::before {
       width: 127px;
@@ -137,6 +139,7 @@
 
 .assortment__picture--mountain {
   transform: translateY(42px);
+  width: 342px;
 
   &::after,
   &::before {
@@ -160,6 +163,7 @@
 
   @include tablet {
     transform: translateY(0);
+    width: 270px;
 
     &::before,
     &::after {
@@ -180,6 +184,7 @@
 
 .assortment__picture--child {
   transform: translateY(4px);
+  width: 342px;
 
   &::before {
     position: absolute;
@@ -194,6 +199,8 @@
   }
 
   @include tablet {
+    width: 270px;
+
     &::before {
       width: 68px;
       height: 68px;
